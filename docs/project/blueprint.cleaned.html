@@ -1,0 +1,237 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marketing Process Documentation System</title>
+
+</head>
+<body><pre># Marketing Process Documentation System
+
+## 1. Purpose
+
+Document marketing as a flexible process that can evolve over time.
+
+The system must support:
+
+- Level 1: What needs to happen
+- Level 2: How each step is currently implemented
+- Manual and automated activities
+- Tools and URLs
+- Future automation and code generation
+
+## 2. Process Structure
+
+A marketing process consists of connected nodes.
+
+```text
+Node → Node → Node → Node
+```
+
+A node represents one meaningful step in the process.
+
+Example:
+
+```text
+Identify Course
+      ↓
+Define Campaign
+      ↓
+Reach Audience
+      ↓
+Capture Leads
+      ↓
+Nurture Leads
+      ↓
+Measure Interest
+      ↓
+Offer Course
+      ↓
+Follow Up
+```
+
+Nodes may be added, removed, reordered or split as the process evolves.
+
+## 3. Node Definition
+
+Each node should support:
+
+```yaml
+node:
+  id:
+  name:
+  description:
+
+  input:
+  output:
+
+  implementation:
+    description:
+    manual:
+    automated:
+
+  tools:
+    - name:
+      url:
+
+  automation:
+    description:
+    trigger:
+    conditions:
+    actions:
+
+  next_nodes:
+    - id:
+
+  notes:
+```
+
+Only relevant fields need to be populated.
+
+## 4. Level 1
+
+Level 1 describes **what must happen**.
+
+It should remain independent of:
+
+- Specific tools
+- Software
+- People
+- APIs
+- Implementation details
+
+Example:
+
+```markdown
+## Capture Leads
+
+Capture people who respond to the campaign and create identifiable
+lead records.
+```
+
+## 5. Level 2
+
+Level 2 describes **how the node is currently implemented**.
+
+Example:
+
+```markdown
+## Capture Leads
+
+### Level 1
+
+Capture campaign responses as leads.
+
+### Level 2
+
+- Landing page collects lead information
+- Form stores the submission
+- Marketing Manager reviews new leads
+- Lead is added to the nurture process
+
+### Tools
+
+- Website
+- Lead management system
+
+### URLs
+
+- [Landing Page](https://example.com)
+- [Lead System](https://example.com)
+```
+
+Level 2 may change without changing Level 1.
+
+## 6. Automation Definition
+
+Each node should allow automation to be documented.
+
+```markdown
+### Automation
+
+**Trigger:** New lead submitted
+
+**Conditions:**
+- Required information is available
+
+**Actions:**
+1. Create lead
+2. Identify campaign
+3. Record source
+4. Start nurture process
+5. Notify responsible person
+```
+
+Automation may be:
+
+- None
+- Partially automated
+- Fully automated
+- Planned
+
+## 7. Tools and URLs
+
+Any node may contain references to:
+
+- Websites
+- Applications
+- Documents
+- Forms
+- APIs
+- Dashboards
+- Internal systems
+
+Example:
+
+```markdown
+### Resources
+
+- [Campaign Form](https://example.com/form)
+- [Campaign Dashboard](https://example.com/dashboard)
+```
+
+## 8. Example Process
+
+# In-office batch-based courses
+
+### Nodes
+
+1. Identify Course
+2. Define Campaign
+3. Identify Ways to Reach
+4. Capture Leads
+5. Nurture Leads
+6. Measure Interest
+7. Offer Course
+8. Follow Up
+
+Each node is independently documented and implemented.
+
+## 9. Future Code Generation
+
+The documentation should contain enough structured information to generate:
+
+- Database models
+- APIs
+- Workflow engines
+- Tasks
+- Notifications
+- Integrations
+- Automation
+- Dashboards
+
+The documentation is the **process specification**.
+
+Implementation can change without changing the fundamental process.
+
+## 10. Core Principle
+
+&gt; **Level 1 defines WHAT.**
+&gt;
+&gt; **Level 2 defines HOW.**
+&gt;
+&gt; **Automation defines WHAT CAN BE DONE AUTOMATICALLY.**
+&gt;
+&gt; **Tools define WHERE IT IS CURRENTLY DONE.**
+
+The process must remain flexible and continuously evolve.
+</pre>
+</body></html>
