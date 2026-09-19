@@ -2,34 +2,34 @@
   "entity_type": "requirement",
   "entity_id": "REQ-use-firebase-authentication",
   "assigned_to": "8I5g2LKf6Dg3lf7F8yuWUbfS0vC2",
-  "status": "pending",
+  "status": "completed",
   "questions": [
     {
       "id": "q1",
       "type": "text",
       "text": "The decision has no recorded rationale. Which Firebase Auth sign-in methods should be supported for hospital staff and patients (e.g. email/password, phone OTP, Google sign-in)?",
       "required": true,
-      "answer": null,
-      "answered_by": null,
-      "answered_at": null
+      "answer": "email/password",
+      "answered_by": "8I5g2LKf6Dg3lf7F8yuWUbfS0vC2",
+      "answered_at": "2026-09-19T02:39:57.692Z"
     },
     {
       "id": "q2",
       "type": "text",
       "text": "The blueprint already assigns session/JWT issuance and RBAC to the Identity Service microservice. Does adopting Firebase mean Firebase Auth fully replaces the Identity Service session/JWT layer (client authenticates directly against Firebase, backend just verifies Firebase ID tokens), or does the Identity Service keep minting its own JWTs/sessions after Firebase only verifies credentials?",
       "required": true,
-      "answer": null,
-      "answered_by": null,
-      "answered_at": null
+      "answer": "yes",
+      "answered_by": "8I5g2LKf6Dg3lf7F8yuWUbfS0vC2",
+      "answered_at": "2026-09-19T02:39:57.692Z"
     },
     {
       "id": "q3",
       "type": "text",
       "text": "Does this Firebase decision apply to both hospital staff and patient sign-in, or only one of these user types? (Blueprint notes patients are registered by staff first and may not have login credentials of their own initially.)",
       "required": true,
-      "answer": null,
-      "answered_by": null,
-      "answered_at": null
+      "answer": "yes",
+      "answered_by": "8I5g2LKf6Dg3lf7F8yuWUbfS0vC2",
+      "answered_at": "2026-09-19T02:39:57.692Z"
     }
   ]
 }
