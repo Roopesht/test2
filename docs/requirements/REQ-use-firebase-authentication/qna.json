@@ -2,7 +2,7 @@
   "entity_type": "requirement",
   "entity_id": "REQ-use-firebase-authentication",
   "assigned_to": "8I5g2LKf6Dg3lf7F8yuWUbfS0vC2",
-  "status": "completed",
+  "status": "pending",
   "questions": [
     {
       "id": "q1",
@@ -30,6 +30,15 @@
       "answer": "yes",
       "answered_by": "8I5g2LKf6Dg3lf7F8yuWUbfS0vC2",
       "answered_at": "2026-09-19T02:39:57.692Z"
+    },
+    {
+      "id": "q4",
+      "type": "text",
+      "text": "This project (prj-maternity-8) has no Applications registered yet, so a Work Item cannot be assigned an applicationId. Which application should this Firebase authentication work belong to (e.g. the Identity Service backend, a web frontend, a mobile app)? Please create that Application first (or provide its name/id) so the Work Item can be created against it.",
+      "required": true,
+      "answer": null,
+      "answered_by": null,
+      "answered_at": null
     }
   ]
 }
