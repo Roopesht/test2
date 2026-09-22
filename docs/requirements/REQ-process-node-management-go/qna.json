@@ -1,0 +1,26 @@
+{
+  "entity_type": "requirement",
+  "entity_id": "REQ-process-node-management-go",
+  "assigned_to": "8I5g2LKf6Dg3lf7F8yuWUbfS0vC2",
+  "status": "pending",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "text",
+      "text": "Decision dec-go-4 has title \"Go\" and an empty rationale, so there is no actual decision content to draft a requirement from beyond the parent feature (\"Process Node Management\": create and manage process steps with names, descriptions, inputs, outputs, notes, and implementation info). What specific capability or behavior should this requirement describe?",
+      "required": true,
+      "answer": null,
+      "answered_by": null,
+      "answered_at": null
+    },
+    {
+      "id": "q2",
+      "type": "text",
+      "text": "Is there a specific UI flow or screen this requirement should cover (for the mock.md wireframe), or is it purely backend/data-model behavior?",
+      "required": true,
+      "answer": null,
+      "answered_by": null,
+      "answered_at": null
+    }
+  ]
+}
