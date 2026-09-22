@@ -2,7 +2,7 @@
   "entity_type": "requirement",
   "entity_id": "REQ-process-node-management",
   "assigned_to": "8I5g2LKf6Dg3lf7F8yuWUbfS0vC2",
-  "status": "completed",
+  "status": "pending",
   "questions": [
     {
       "id": "q1",
@@ -30,6 +30,15 @@
       "answer": "yes, its same",
       "answered_by": "8I5g2LKf6Dg3lf7F8yuWUbfS0vC2",
       "answered_at": "2026-09-22T10:45:53.996Z"
+    },
+    {
+      "id": "q4",
+      "type": "text",
+      "text": "Project prj-maternity-7 currently has no Applications defined (GET /api/projects/prj-maternity-7/apps returns an empty list), but a Work Item for REQ-process-node-management requires an applicationId. Which Application should this work item be created under - an existing one that needs to be added first, or a new Application that should be created for this work (e.g. a marketing-process-management service/app, distinct from the maternal-care platform apps described in the project blueprint)? Please specify the application (name/id) to use.",
+      "required": true,
+      "answer": null,
+      "answered_by": null,
+      "answered_at": null
     }
   ]
 }
