@@ -2,34 +2,34 @@
   "entity_type": "requirement",
   "entity_id": "REQ-process-node-management",
   "assigned_to": "8I5g2LKf6Dg3lf7F8yuWUbfS0vC2",
-  "status": "pending",
+  "status": "completed",
   "questions": [
     {
       "id": "q1",
       "type": "text",
       "text": "This project already has an approved requirement, REQ-marketing-process-node-management, that documents nodes with a full data model (id/name/description, input/output, Level 1 (what) vs Level 2 (how) docs, automation status/trigger/conditions/actions, tool/URL references) and next_nodes chaining. Decision dec-go-5 approves a separate change request (feat-process-node-management-1) whose description is narrower: \"Create, edit, remove, and independently document nodes that represent individual marketing activities.\" Is REQ-process-node-management meant to (a) supersede/replace the existing requirement's data model, (b) reuse it as-is under a new requirement id, or (c) define a distinct, simpler node concept that coexists with it? Please clarify the relationship.",
       "required": true,
-      "answer": null,
-      "answered_by": null,
-      "answered_at": null
+      "answer": "c",
+      "answered_by": "8I5g2LKf6Dg3lf7F8yuWUbfS0vC2",
+      "answered_at": "2026-09-22T10:45:53.996Z"
     },
     {
       "id": "q2",
       "type": "text",
       "text": "The feature description for this requirement only mentions create/edit/remove/document for individual nodes - it does not mention connecting nodes into a sequence (next_nodes / process flow). Should this requirement include node-to-node linking/ordering, or is sequencing explicitly out of scope here (e.g. handled by a separate future requirement)?",
       "required": true,
-      "answer": null,
-      "answered_by": null,
-      "answered_at": null
+      "answer": "handled by a separate future requirement",
+      "answered_by": "8I5g2LKf6Dg3lf7F8yuWUbfS0vC2",
+      "answered_at": "2026-09-22T10:45:53.996Z"
     },
     {
       "id": "q3",
       "type": "text",
       "text": "\"Independently document\" a node - does this mean the same Level 1 (what)/Level 2 (how) split used in REQ-marketing-process-node-management, or a different/simpler set of fields (e.g. just name, description, notes)? Please specify the fields a node should carry.",
       "required": true,
-      "answer": null,
-      "answered_by": null,
-      "answered_at": null
+      "answer": "yes, its same",
+      "answered_by": "8I5g2LKf6Dg3lf7F8yuWUbfS0vC2",
+      "answered_at": "2026-09-22T10:45:53.996Z"
     }
   ]
 }
