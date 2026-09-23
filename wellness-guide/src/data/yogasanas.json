@@ -1,0 +1,18 @@
+{
+  "yogasanas": [
+    {
+      "id": "mountain-pose",
+      "name": "Mountain Pose",
+      "benefit": "Improves posture and balance while strengthening the legs and core.",
+      "steps": [
+        "Stand with feet together, arms at sides",
+        "Distribute weight evenly across both feet",
+        "Engage thigh muscles and lift kneecaps",
+        "Roll shoulders back and down",
+        "Breathe deeply for 30-60 seconds"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400",
+      "suggestedDuration": 30
+    }
+  ]
+}
